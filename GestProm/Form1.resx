@@ -117,11 +117,32 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pmenud.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADoAAAAtCAYAAAD/aHgLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGdSURBVGhD7Zohb8MwEIUDAwsLAwsLBwMHCwcL9xMG+w8G
+        BwcHBwv3EwoHBwcHi5z0nf2qLGk2edOk2U/+JMvV2b7e610cVXZVmKHv+watZdv9Uzt/f8Ow/gY4XKDd
+        OecO6JMCMb2iM/FLhvtzsLg2J3D2gT5pEOMR7R4fFww/DluAhS/eS0YgZqu6uJLGRBOZXJnGgtitAleU
+        Mw8m1Dlmcgo0vKH7uowxwepcAmh5oqwxGFti8BimybCmvAEYbZuWAol7pLwBGO2dJAU02cZUU6LP5sqP
+        aNJSZlV1XXdNoyJbyvQZ3QabJDvK1NyIPlGEqlGEqlGEqlGEqlGEqlGEqlGEqlGEqjEI7brulkZFRhnd
+        BJselkTK9Bm9ol2RDWUGnHPvHJCBJw/jMxgYH8KwDtC0p7wB2NdhWIpx2Z7BL/DMCdkDLQfKugTjDSZk
+        /6xCgz2b3x8G2w7MiTkzX7JTKDb5SxpTLEGI/YYy4sA6K+NsjvkRq927uDz4jQWLWzjZe28JwmTElWoM
+        cGYXq+zUzf4ApNAslt9fpNKkqk674++IYKvQAwAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="btnmenud.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCAkQHwhVSqANAAAAXUlEQVRIS2MYBQTBnDlzVGbNmlUC
+        xOVUxiUgsxmAjDtA/J8WePbs2bdAFtxGl6AWBlsA8sbMmTNrgQIdVMY1QHOVoTExCvCA0WSKD48m00EC
+        RpMpPjyaTAcDYGAAAPd+2ObkRz7LAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
     <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 10pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(154, 154, 154); text-align: left; }</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMEAAAHQCAYAAAAYvw4WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAaISURBVHhe7dqhchtnGEBRw8JAwz5CYKAfITDQsDDQMG8Q
@@ -153,6 +174,14 @@
         zn9fI3/XPO5qQMH9V4F/zAE+OONozVXgco36w+bAX9dz4GjMXH+Z3e3/CP2b7UAhcExWAK/WiD/ePMkX
         63jxtlug2T3uCnCfefLZnOS3m7PBCzJz+8fsHn4T/D22k223SLNtn7TBszUz+nl2h+8F/QjzB7Yv3G3/
         Rdpul2y257Jtc/n02x5oOjn5BjAy+hudlbgeAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bunifuIconButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCAkQHwhVSqANAAAAXUlEQVRIS2MYBQTBnDlzVGbNmlUC
+        xOVUxiUgsxmAjDtA/J8WePbs2bdAFtxGl6AWBlsA8sbMmTNrgQIdVMY1QHOVoTExCvCA0WSKD48m00EC
+        RpMpPjyaTAcDYGAAAPd+2ObkRz7LAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="bunifuButton21.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
