@@ -47,18 +47,19 @@
             this.bunifuButton24 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton23 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.bunifuButton22 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
-            this.bunifuIconButton2 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.closemenu = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.bunifuButton21 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.label2 = new System.Windows.Forms.Label();
             this.bunifuLabel2 = new Bunifu.UI.WinForms.BunifuLabel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.bunifuIconButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
+            this.btnclose = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.labelhora = new System.Windows.Forms.Label();
             this.bunifuButton26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
             this.panelfecha = new Bunifu.UI.WinForms.BunifuPanel();
             this.fecha = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pmenud.SuspendLayout();
             this.menu.SuspendLayout();
@@ -159,7 +160,7 @@
             this.menu.Controls.Add(this.bunifuButton24);
             this.menu.Controls.Add(this.bunifuButton23);
             this.menu.Controls.Add(this.bunifuButton22);
-            this.menu.Controls.Add(this.bunifuIconButton2);
+            this.menu.Controls.Add(this.closemenu);
             this.menu.Controls.Add(this.bunifuButton21);
             this.menu.Controls.Add(this.label2);
             this.menu.Controls.Add(this.bunifuLabel2);
@@ -526,37 +527,37 @@
             this.bunifuButton22.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton22.UseDefaultRadiusAndThickness = true;
             // 
-            // bunifuIconButton2
+            // closemenu
             // 
-            this.bunifuIconButton2.AllowAnimations = true;
-            this.bunifuIconButton2.AllowBorderColorChanges = true;
-            this.bunifuIconButton2.AllowMouseEffects = true;
-            this.bunifuIconButton2.AnimationSpeed = 200;
-            this.bunifuIconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuIconButton2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuIconButton2.BorderColor = System.Drawing.Color.Empty;
-            this.bunifuIconButton2.BorderRadius = 1;
-            this.bunifuIconButton2.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.bunifuIconButton2.BorderThickness = 1;
-            this.bunifuIconButton2.ColorContrastOnClick = 30;
-            this.bunifuIconButton2.ColorContrastOnHover = 30;
-            this.bunifuIconButton2.Cursor = System.Windows.Forms.Cursors.Default;
+            this.closemenu.AllowAnimations = true;
+            this.closemenu.AllowBorderColorChanges = true;
+            this.closemenu.AllowMouseEffects = true;
+            this.closemenu.AnimationSpeed = 200;
+            this.closemenu.BackColor = System.Drawing.Color.Transparent;
+            this.closemenu.BackgroundColor = System.Drawing.Color.Transparent;
+            this.closemenu.BorderColor = System.Drawing.Color.Empty;
+            this.closemenu.BorderRadius = 1;
+            this.closemenu.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.closemenu.BorderThickness = 1;
+            this.closemenu.ColorContrastOnClick = 30;
+            this.closemenu.ColorContrastOnHover = 30;
+            this.closemenu.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges7.BottomLeft = true;
             borderEdges7.BottomRight = true;
             borderEdges7.TopLeft = true;
             borderEdges7.TopRight = true;
-            this.bunifuIconButton2.CustomizableEdges = borderEdges7;
-            this.bunifuIconButton2.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuIconButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuIconButton2.Image")));
-            this.bunifuIconButton2.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.bunifuIconButton2.Location = new System.Drawing.Point(150, 18);
-            this.bunifuIconButton2.Name = "bunifuIconButton2";
-            this.bunifuIconButton2.RoundBorders = true;
-            this.bunifuIconButton2.ShowBorders = true;
-            this.bunifuIconButton2.Size = new System.Drawing.Size(35, 35);
-            this.bunifuIconButton2.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.bunifuIconButton2.TabIndex = 1;
-            this.bunifuIconButton2.Click += new System.EventHandler(this.bunifuIconButton2_Click);
+            this.closemenu.CustomizableEdges = borderEdges7;
+            this.closemenu.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.closemenu.Image = ((System.Drawing.Image)(resources.GetObject("closemenu.Image")));
+            this.closemenu.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.closemenu.Location = new System.Drawing.Point(150, 18);
+            this.closemenu.Name = "closemenu";
+            this.closemenu.RoundBorders = true;
+            this.closemenu.ShowBorders = true;
+            this.closemenu.Size = new System.Drawing.Size(35, 35);
+            this.closemenu.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.closemenu.TabIndex = 1;
+            this.closemenu.Click += new System.EventHandler(this.bunifuIconButton2_Click);
             // 
             // bunifuButton21
             // 
@@ -704,7 +705,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.labelhora);
-            this.panel2.Controls.Add(this.bunifuIconButton1);
+            this.panel2.Controls.Add(this.btnclose);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -712,37 +713,37 @@
             this.panel2.TabIndex = 0;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
-            // bunifuIconButton1
+            // btnclose
             // 
-            this.bunifuIconButton1.AllowAnimations = true;
-            this.bunifuIconButton1.AllowBorderColorChanges = true;
-            this.bunifuIconButton1.AllowMouseEffects = true;
-            this.bunifuIconButton1.AnimationSpeed = 200;
-            this.bunifuIconButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuIconButton1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuIconButton1.BorderColor = System.Drawing.Color.Empty;
-            this.bunifuIconButton1.BorderRadius = 1;
-            this.bunifuIconButton1.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
-            this.bunifuIconButton1.BorderThickness = 1;
-            this.bunifuIconButton1.ColorContrastOnClick = 30;
-            this.bunifuIconButton1.ColorContrastOnHover = 30;
-            this.bunifuIconButton1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.btnclose.AllowAnimations = true;
+            this.btnclose.AllowBorderColorChanges = true;
+            this.btnclose.AllowMouseEffects = true;
+            this.btnclose.AnimationSpeed = 200;
+            this.btnclose.BackColor = System.Drawing.Color.Transparent;
+            this.btnclose.BackgroundColor = System.Drawing.Color.Transparent;
+            this.btnclose.BorderColor = System.Drawing.Color.Empty;
+            this.btnclose.BorderRadius = 1;
+            this.btnclose.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderStyles.Solid;
+            this.btnclose.BorderThickness = 1;
+            this.btnclose.ColorContrastOnClick = 30;
+            this.btnclose.ColorContrastOnHover = 30;
+            this.btnclose.Cursor = System.Windows.Forms.Cursors.Default;
             borderEdges9.BottomLeft = true;
             borderEdges9.BottomRight = true;
             borderEdges9.TopLeft = true;
             borderEdges9.TopRight = true;
-            this.bunifuIconButton1.CustomizableEdges = borderEdges9;
-            this.bunifuIconButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.bunifuIconButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuIconButton1.Image")));
-            this.bunifuIconButton1.ImageMargin = new System.Windows.Forms.Padding(0);
-            this.bunifuIconButton1.Location = new System.Drawing.Point(1157, 1);
-            this.bunifuIconButton1.Name = "bunifuIconButton1";
-            this.bunifuIconButton1.RoundBorders = true;
-            this.bunifuIconButton1.ShowBorders = true;
-            this.bunifuIconButton1.Size = new System.Drawing.Size(35, 35);
-            this.bunifuIconButton1.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.bunifuIconButton1.TabIndex = 0;
-            this.bunifuIconButton1.Click += new System.EventHandler(this.bunifuIconButton1_Click);
+            this.btnclose.CustomizableEdges = borderEdges9;
+            this.btnclose.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
+            this.btnclose.ImageMargin = new System.Windows.Forms.Padding(0);
+            this.btnclose.Location = new System.Drawing.Point(1157, 1);
+            this.btnclose.Name = "btnclose";
+            this.btnclose.RoundBorders = true;
+            this.btnclose.ShowBorders = true;
+            this.btnclose.Size = new System.Drawing.Size(35, 35);
+            this.btnclose.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
+            this.btnclose.TabIndex = 0;
+            this.btnclose.Click += new System.EventHandler(this.bunifuIconButton1_Click);
             // 
             // labelhora
             // 
@@ -853,6 +854,7 @@
             this.panelfecha.BorderColor = System.Drawing.Color.White;
             this.panelfecha.BorderRadius = 25;
             this.panelfecha.BorderThickness = 1;
+            this.panelfecha.Controls.Add(this.label3);
             this.panelfecha.Controls.Add(this.fecha);
             this.panelfecha.Location = new System.Drawing.Point(870, 30);
             this.panelfecha.Name = "panelfecha";
@@ -867,11 +869,23 @@
             this.fecha.BackColor = System.Drawing.Color.Transparent;
             this.fecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha.ForeColor = System.Drawing.Color.DarkGray;
-            this.fecha.Location = new System.Drawing.Point(10, 47);
+            this.fecha.Location = new System.Drawing.Point(13, 57);
             this.fecha.Name = "fecha";
             this.fecha.Size = new System.Drawing.Size(173, 20);
             this.fecha.TabIndex = 3;
             this.fecha.Text = "09/08/2023 04:23:53";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(36, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(128, 20);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Date and Time";
             // 
             // Form1
             // 
@@ -909,10 +923,10 @@
         private System.Windows.Forms.Label label2;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel2;
         private Bunifu.UI.WinForms.BunifuPictureBox bunifuPictureBox1;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton bunifuIconButton1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnclose;
         private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton21;
-        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton bunifuIconButton2;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton closemenu;
         private Bunifu.UI.WinForms.BunifuPanel pmenud;
         private Bunifu.UI.WinForms.BunifuButton.BunifuIconButton btnmenud;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton22;
@@ -923,6 +937,7 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton26;
         private Bunifu.UI.WinForms.BunifuPanel panelfecha;
         private System.Windows.Forms.Label fecha;
+        private System.Windows.Forms.Label label3;
     }
 }
 

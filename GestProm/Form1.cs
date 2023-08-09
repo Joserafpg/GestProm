@@ -16,7 +16,6 @@ namespace GestProm
 {
     public partial class Form1 : Form
     {
-
         private Timer timer;
         private int time = 300;
 
@@ -29,6 +28,16 @@ namespace GestProm
             timer.Tick += Timer_Tick;
 
             timer.Start();
+
+            var ms1 = new ToolTip();
+            ms1.SetToolTip(btnclose, "Exit");
+
+            var ms2 = new ToolTip();
+            ms2.SetToolTip(closemenu, "Close Menu");
+
+            var ms3 = new ToolTip();
+            ms3.SetToolTip(btnmenud, "Open Menu");
+
         }
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -104,7 +113,7 @@ namespace GestProm
             pmenud.Visible = true;
             btnmenud.Visible = true;
 
-            bunifuIconButton2.Visible = false;
+            closemenu.Visible = false;
             dezplazaraafuera();
         }
 
@@ -112,7 +121,7 @@ namespace GestProm
         {
             Transition l = new Transition(new TransitionType_EaseInEaseOut(time));
             l.add(menu, "Left", 23);
-            bunifuIconButton2.Visible = true;
+            closemenu.Visible = true;
             l.run();
 
             dezplazaradentro();
