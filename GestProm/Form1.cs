@@ -34,6 +34,9 @@ namespace GestProm
         private void Timer_Tick(object sender, EventArgs e)
         {
             labelhora.Text = DateTime.Now.ToString("HH:mm");
+
+            DateTime fechaActual = DateTime.Now;
+            fecha.Text = fechaActual.ToString("dd/MM/yyyy HH:mm:ss");
         }
 
         async Task EsperarAsync()
@@ -118,6 +121,16 @@ namespace GestProm
         private void Form1_Load(object sender, EventArgs e)
         {
             bordesradius();
+        }
+
+        private void labelhora_MouseLeave(object sender, EventArgs e)
+        {
+            panelfecha.Visible = false;
+        }
+
+        private void labelhora_MouseEnter(object sender, EventArgs e)
+        {
+            panelfecha.Visible = true;
         }
     }
 }

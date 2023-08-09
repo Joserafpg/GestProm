@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
@@ -38,6 +37,7 @@
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges8 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges borderEdges9 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2.BorderEdges();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pmenud = new Bunifu.UI.WinForms.BunifuPanel();
             this.btnmenud = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
@@ -57,16 +57,20 @@
             this.bunifuIconButton1 = new Bunifu.UI.WinForms.BunifuButton.BunifuIconButton();
             this.labelhora = new System.Windows.Forms.Label();
             this.bunifuButton26 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton2();
+            this.panelfecha = new Bunifu.UI.WinForms.BunifuPanel();
+            this.fecha = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.pmenud.SuspendLayout();
             this.menu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
+            this.panelfecha.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel1.Controls.Add(this.panelfecha);
             this.panel1.Controls.Add(this.pmenud);
             this.panel1.Controls.Add(this.bunifuLabel1);
             this.panel1.Controls.Add(this.menu);
@@ -749,6 +753,8 @@
             this.labelhora.Size = new System.Drawing.Size(41, 16);
             this.labelhora.TabIndex = 1;
             this.labelhora.Text = "00: 00";
+            this.labelhora.MouseEnter += new System.EventHandler(this.labelhora_MouseEnter);
+            this.labelhora.MouseLeave += new System.EventHandler(this.labelhora_MouseLeave);
             // 
             // bunifuButton26
             // 
@@ -839,6 +845,34 @@
             this.bunifuButton26.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton26.UseDefaultRadiusAndThickness = true;
             // 
+            // panelfecha
+            // 
+            this.panelfecha.BackgroundColor = System.Drawing.Color.White;
+            this.panelfecha.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelfecha.BackgroundImage")));
+            this.panelfecha.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelfecha.BorderColor = System.Drawing.Color.White;
+            this.panelfecha.BorderRadius = 25;
+            this.panelfecha.BorderThickness = 1;
+            this.panelfecha.Controls.Add(this.fecha);
+            this.panelfecha.Location = new System.Drawing.Point(870, 30);
+            this.panelfecha.Name = "panelfecha";
+            this.panelfecha.ShowBorders = true;
+            this.panelfecha.Size = new System.Drawing.Size(200, 116);
+            this.panelfecha.TabIndex = 6;
+            this.panelfecha.Visible = false;
+            // 
+            // fecha
+            // 
+            this.fecha.AutoSize = true;
+            this.fecha.BackColor = System.Drawing.Color.Transparent;
+            this.fecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fecha.ForeColor = System.Drawing.Color.DarkGray;
+            this.fecha.Location = new System.Drawing.Point(10, 47);
+            this.fecha.Name = "fecha";
+            this.fecha.Size = new System.Drawing.Size(173, 20);
+            this.fecha.TabIndex = 3;
+            this.fecha.Text = "09/08/2023 04:23:53";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -860,6 +894,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panelfecha.ResumeLayout(false);
+            this.panelfecha.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -885,6 +921,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton23;
         private System.Windows.Forms.Label labelhora;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 bunifuButton26;
+        private Bunifu.UI.WinForms.BunifuPanel panelfecha;
+        private System.Windows.Forms.Label fecha;
     }
 }
 
