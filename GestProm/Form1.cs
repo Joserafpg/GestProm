@@ -16,12 +16,28 @@ namespace GestProm
 {
     public partial class Form1 : Form
     {
+
+        private Timer timer;
+        private int time = 300;
+
         public Form1()
         {
             InitializeComponent();
+            
+            timer = new Timer();
+            timer.Interval = 1000; // Intervalo de 1 segundo
+            timer.Tick += Timer_Tick;
+
+            // Iniciar el Timer
+            timer.Start();
         }
 
-        private int time = 300;
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            labelhora.Text = DateTime.Now.ToString("HH:mm");
+        }
+
+
 
         async Task EsperarAsync()
         {
