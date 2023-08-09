@@ -25,10 +25,9 @@ namespace GestProm
             InitializeComponent();
             
             timer = new Timer();
-            timer.Interval = 1000; // Intervalo de 1 segundo
+            timer.Interval = 1000;
             timer.Tick += Timer_Tick;
 
-            // Iniciar el Timer
             timer.Start();
         }
 
@@ -36,8 +35,6 @@ namespace GestProm
         {
             labelhora.Text = DateTime.Now.ToString("HH:mm");
         }
-
-
 
         async Task EsperarAsync()
         {
@@ -104,9 +101,7 @@ namespace GestProm
             pmenud.Visible = true;
             btnmenud.Visible = true;
 
-            Task.Delay(2000);
             bunifuIconButton2.Visible = false;
-
             dezplazaraafuera();
         }
 
