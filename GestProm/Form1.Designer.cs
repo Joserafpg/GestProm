@@ -93,7 +93,7 @@
             this.panelfecha.Location = new System.Drawing.Point(878, 30);
             this.panelfecha.Name = "panelfecha";
             this.panelfecha.ShowBorders = true;
-            this.panelfecha.Size = new System.Drawing.Size(200, 116);
+            this.panelfecha.Size = new System.Drawing.Size(200, 91);
             this.panelfecha.TabIndex = 6;
             this.panelfecha.Visible = false;
             // 
@@ -103,7 +103,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(36, 30);
+            this.label3.Location = new System.Drawing.Point(36, 21);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(128, 20);
             this.label3.TabIndex = 4;
@@ -115,7 +115,7 @@
             this.fecha.BackColor = System.Drawing.Color.Transparent;
             this.fecha.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fecha.ForeColor = System.Drawing.Color.DarkGray;
-            this.fecha.Location = new System.Drawing.Point(13, 57);
+            this.fecha.Location = new System.Drawing.Point(13, 48);
             this.fecha.Name = "fecha";
             this.fecha.Size = new System.Drawing.Size(173, 20);
             this.fecha.TabIndex = 3;
@@ -552,6 +552,7 @@
             this.bunifuButton23.TextMarginLeft = 0;
             this.bunifuButton23.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton23.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton23.Click += new System.EventHandler(this.bunifuButton23_Click);
             // 
             // bunifuButton22
             // 
@@ -641,6 +642,7 @@
             this.bunifuButton22.TextMarginLeft = 0;
             this.bunifuButton22.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton22.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton22.Click += new System.EventHandler(this.bunifuButton22_Click);
             // 
             // closemenu
             // 
@@ -762,6 +764,7 @@
             this.bunifuButton21.TextMarginLeft = 0;
             this.bunifuButton21.TextPadding = new System.Windows.Forms.Padding(0);
             this.bunifuButton21.UseDefaultRadiusAndThickness = true;
+            this.bunifuButton21.Click += new System.EventHandler(this.bunifuButton21_Click);
             // 
             // label2
             // 

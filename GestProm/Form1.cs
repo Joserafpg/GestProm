@@ -163,7 +163,7 @@ namespace GestProm
 
         private void bunifuButton26_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void bunifuButton25_Click(object sender, EventArgs e)
@@ -177,6 +177,24 @@ namespace GestProm
         {
             tittlepage.Text = "Analytics";
             descriptiontext.Text = "Display analytics about your channel.";
+        }
+
+        private void bunifuButton23_Click(object sender, EventArgs e)
+        {
+            tittlepage.Text = "Budget";
+            descriptiontext.Text = "???";
+        }
+
+        private void bunifuButton22_Click(object sender, EventArgs e)
+        {
+            tittlepage.Text = "Profile";
+            descriptiontext.Text = "???";
+        }
+
+        private void bunifuButton21_Click(object sender, EventArgs e)
+        {
+            tittlepage.Text = "Dashboard";
+            descriptiontext.Text = "???";
         }
     }
 }
