@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GestProm
 {
@@ -35,16 +36,44 @@ namespace GestProm
         private void Login_Load(object sender, EventArgs e)
         {
             bordesradius();
-        }
-
-        private void bunifuPanel1_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void bunifuTextBox1_TextChanged(object sender, EventArgs e)
+        private void txtpass_TextChanged(object sender, EventArgs e)
         {
+            string inputText = txtpass.Text;
 
+            bool containsLetterOrDigit = false;
+
+            foreach (char c in inputText)
+            {
+                if (char.IsLetter(c) || char.IsDigit(c))
+                {
+                    containsLetterOrDigit = true;
+                    break;
+                }
+            }
+
+            if (containsLetterOrDigit)
+            {
+                txtpass.PasswordChar = '●';
+                btnpassview.Visible = true;
+            }
+            else
+            {
+                txtpass.PasswordChar = '\0';
+                btnpassview.Visible = false;
+            }
+        }
+
+        private void bunifuIconButton1_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtpass.PasswordChar = '\0';
+        }
+
+        private void bunifuIconButton1_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtpass.PasswordChar = '●';
         }
     }
 }
