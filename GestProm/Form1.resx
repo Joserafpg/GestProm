@@ -668,7 +668,27 @@
         fyerrQAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuIconButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCAoBBDWrRUEvAAADOUlEQVRYR7WXy04UQRSGx42XiIkr
+        b4kLLzs1Xp7CFxgC74DiI4CJgY0msuEy4TLMbmArPAAZARdG3UMCiQsGjAswEYwZv7891RY9PdPVDf7J
+        yXTV+es/p2qqTleXQjE9PX2pWq32z83NVbAPWBM7MtPzOv6p2dnZPnFt2MlRq9WuIzxOgB9YK9DErTD2
+        rsnkR71ev0DglwgdeMLO9rAv+N/xu6Rn60vyjliR0bGxsXMmGwZlzmCJxmIE20BsCHtktDbAeSyOuImx
+        jUqlctVo3aEADNrxBJoIDLAiZ42SCXHReaaxns72/Pz8faOkw2buB3+P0DVz54b2Dxqrnt5Wx5XQfw4h
+        XnZmXSf4eXOnQqvFjn9ozVRIA70FT7eRuidwaMO5TDXzrsEVGN5vWUgS2JrTJ9aIuf7Clsrt9ibkzGWH
+        U3aCerbujrAYuzbmELtjrmj2OucuuwHr7oq8CQhoD3pxpqJOVS06oiJD50bobi+SgLThb9q4A9o9ykrl
+        1QkNGTcTRRIQ4A+7cVivOlTbnVDHIpNEMgHsMs9vsO88vzZaG2ZmZp64cdikEtCLRY094wTBT4BVrPPr
+        F50to7Wh1Wqdwf9NPDTWlEC0MxH5ZJwg+Akk7Cu+p0ZLBZzPxt1RQ0dCjSXzByElAem8DXkVw1vWGCb9
+        009g2fxBIIEHjPllYxep87fMlQnF0jiXQKG/QFASWVUwDcQ79hesWyPXJiwKfxNiq6oDU9bIdQyLwj+G
+        xJvQMvZ5HcGFqCiIExci4pWPlWJsM7QUF0GiFO+zcS9GDhpxNcSeR53/Acz4hRdn0rrjm5Cu13I09eo0
+        16mBlb6BdnRx1fFrO7ZkN2oJyFZpd72Q5IG00HSnTf/9K3P9g65JZNZwJGzhNJKw4Iue7krHfaYLI4Rt
+        j/yRY3PT3LmhZSeB+CqGdb6UOujqDNFPYpeVGcxzOsQlsDac/7Gyhd0zSncoy8TfIdPxGVYhMVobrMjo
+        nLuj5myFiV0xWhhsT4ww2L2sfFMp1RVen2Xu08yVV98OteFOVFuY1W0SUblO+0bsZPvYZJ43ZCaYRQ+i
+        vcxowjaWvqC0OrId9ZHoOL/luMJlolT6AyGqIXOMbXjGAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="btnminimize.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
         MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCAkWCA/KIM2KAAAANUlEQVRIS2MYBaNgFIwCIkDg0mdH

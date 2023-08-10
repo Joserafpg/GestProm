@@ -37,9 +37,9 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(201, 88);
+            this.panel1.Location = new System.Drawing.Point(201, 98);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(787, 359);
+            this.panel1.Size = new System.Drawing.Size(787, 349);
             this.panel1.TabIndex = 0;
             // 
             // button1

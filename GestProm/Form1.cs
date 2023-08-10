@@ -33,10 +33,13 @@ namespace GestProm
             ms1.SetToolTip(btnclose, "Exit");
 
             var ms2 = new ToolTip();
-            ms2.SetToolTip(closemenu, "Close Menu");
+            ms2.SetToolTip(btnminimize, "Minimize");
 
             var ms3 = new ToolTip();
-            ms3.SetToolTip(btnmenud, "Open Menu");
+            ms3.SetToolTip(closemenu, "Close Menu");
+
+            var ms4 = new ToolTip();
+            ms4.SetToolTip(btnmenud, "Open Menu");
 
         }
 
@@ -128,6 +131,8 @@ namespace GestProm
         {
             Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
             t.add(menu, "Left", -300);
+            t.add(tittlepage, "Left", 70);
+            t.add(descriptiontext, "Left", 75);
             t.run();
             pmenud.Visible = true;
             btnmenud.Visible = true;
@@ -140,6 +145,8 @@ namespace GestProm
         {
             Transition l = new Transition(new TransitionType_EaseInEaseOut(time));
             l.add(menu, "Left", 23);
+            l.add(tittlepage, "Left", 250);
+            l.add(descriptiontext, "Left", 255);
             closemenu.Visible = true;
             l.run();
 
