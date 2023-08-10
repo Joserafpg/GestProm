@@ -160,9 +160,6 @@
         RpMpPjyaTAcDYGAAAPd+2ObkRz7LAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
-    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 10pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(154, 154, 154); text-align: left; }</value>
-  </data>
   <data name="menu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAMEAAAHQCAYAAAAYvw4WAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
@@ -673,6 +670,13 @@
         fyerrQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <data name="bunifuIconButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnCAkWCA/KIM2KAAAANUlEQVRIS2MYBaNgFIwCIkDg0mdH
+        A5c+/U8jfBhowdPDaILUw8ueHoL6YxSMglEwCnADBgYAHcSH9BppGVwAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="btnclose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
@@ -688,5 +692,8 @@
         ORPqleBgqBI+5WwoX4IDoWr4lDugbAkMe/w2fI4WH5J6jOPbxbDbfUyOQeNBSQbd7qOyimG3/bB0iqHN
         hP5JPXgcGhoaGhoaakHT9AWOpiJPm2JK8wAAAABJRU5ErkJggg==
 </value>
+  </data>
+  <data name="descriptiontext.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Century Gothic'; font-size: 10pt; width: 100%; height: 100%; font-style: normal; font-weight: bold; text-decoration: none; color: rgb(154, 154, 154); text-align: left; }</value>
   </data>
 </root>

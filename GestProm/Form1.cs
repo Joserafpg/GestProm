@@ -101,10 +101,29 @@ namespace GestProm
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        public void AbrirFormEnPanel(object Formhijo)
+        {
+            if (this.panelDesktop.Controls.Count > 0)
+                this.panelDesktop.Controls.RemoveAt(0);
+            Form fh = Formhijo as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.panelDesktop.Controls.Add(fh);
+            this.panelDesktop.Tag = fh;
+            fh.Show();
+            closemenu.PerformClick();
+        }
+
         private void bunifuIconButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
+        private void bunifuIconButton1_Click_1(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
         private void bunifuIconButton2_Click(object sender, EventArgs e)
         {
             Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
@@ -140,6 +159,24 @@ namespace GestProm
         private void labelhora_MouseEnter(object sender, EventArgs e)
         {
             panelfecha.Visible = true;
+        }
+
+        private void bunifuButton26_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuButton25_Click(object sender, EventArgs e)
+        {
+            tittlepage.Text = "Settings";
+            descriptiontext.Text = "Easily customizable settings and preferences.";
+            AbrirFormEnPanel(new Settings());
+        }
+
+        private void bunifuButton24_Click(object sender, EventArgs e)
+        {
+            tittlepage.Text = "Analytics";
+            descriptiontext.Text = "Display analytics about your channel.";
         }
     }
 }
