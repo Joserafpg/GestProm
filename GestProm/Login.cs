@@ -17,6 +17,9 @@ namespace GestProm
         public Login()
         {
             InitializeComponent();
+
+            var ms1 = new System.Windows.Forms.ToolTip();
+            ms1.SetToolTip(btnpassview, "Show Password");
         }
 
         void bordesradius()
@@ -74,6 +77,11 @@ namespace GestProm
         private void bunifuIconButton1_MouseUp(object sender, MouseEventArgs e)
         {
             txtpass.PasswordChar = '●';
+        }
+
+        private void btnpassview_Click(object sender, EventArgs e)
+        {
+            txtpass.PasswordChar = '\0';
         }
     }
 }
