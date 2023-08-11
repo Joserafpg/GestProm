@@ -114,7 +114,6 @@ namespace GestProm
             this.panelDesktop.Controls.Add(fh);
             this.panelDesktop.Tag = fh;
             fh.Show();
-            closemenu.PerformClick();
         }
 
         private void bunifuIconButton1_Click(object sender, EventArgs e)
@@ -170,6 +169,8 @@ namespace GestProm
 
         private void bunifuButton26_Click(object sender, EventArgs e)
         {
+            Login frm = new Login();
+            frm.Show();
             this.Close();
         }
 
@@ -190,6 +191,7 @@ namespace GestProm
         {
             tittlepage.Text = "Budget";
             descriptiontext.Text = "???";
+            AbrirFormEnPanel(new Budget());
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)
