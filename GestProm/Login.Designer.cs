@@ -48,8 +48,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.signin = new System.Windows.Forms.Label();
+            this.panelb = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.bunifuPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -122,7 +122,7 @@
             this.txtuser.ShortcutsEnabled = true;
             this.txtuser.Size = new System.Drawing.Size(240, 39);
             this.txtuser.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtuser.TabIndex = 0;
+            this.txtuser.TabIndex = 1;
             this.txtuser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtuser.TextMarginBottom = 0;
             this.txtuser.TextMarginLeft = 3;
@@ -130,6 +130,8 @@
             this.txtuser.TextPlaceholder = "Enter Username";
             this.txtuser.UseSystemPasswordChar = false;
             this.txtuser.WordWrap = true;
+            this.txtuser.Click += new System.EventHandler(this.txtuser_Click);
+            this.txtuser.Leave += new System.EventHandler(this.txtuser_Leave);
             // 
             // txtpass
             // 
@@ -199,7 +201,7 @@
             this.txtpass.ShortcutsEnabled = true;
             this.txtpass.Size = new System.Drawing.Size(240, 39);
             this.txtpass.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.txtpass.TabIndex = 1;
+            this.txtpass.TabIndex = 2;
             this.txtpass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtpass.TextMarginBottom = 0;
             this.txtpass.TextMarginLeft = 3;
@@ -208,6 +210,8 @@
             this.txtpass.UseSystemPasswordChar = false;
             this.txtpass.WordWrap = true;
             this.txtpass.TextChanged += new System.EventHandler(this.txtpass_TextChanged);
+            this.txtpass.Click += new System.EventHandler(this.txtpass_Click);
+            this.txtpass.Leave += new System.EventHandler(this.txtpass_Leave);
             // 
             // btnlogin
             // 
@@ -292,7 +296,7 @@
             this.btnlogin.OnPressedState.IconLeftImage = null;
             this.btnlogin.OnPressedState.IconRightImage = null;
             this.btnlogin.Size = new System.Drawing.Size(204, 39);
-            this.btnlogin.TabIndex = 2;
+            this.btnlogin.TabIndex = 3;
             this.btnlogin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnlogin.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnlogin.TextMarginLeft = 0;
@@ -324,14 +328,16 @@
             this.bunifuPanel1.Location = new System.Drawing.Point(311, -2);
             this.bunifuPanel1.Name = "bunifuPanel1";
             this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(516, 455);
-            this.bunifuPanel1.TabIndex = 4;
+            this.bunifuPanel1.Size = new System.Drawing.Size(850, 455);
+            this.bunifuPanel1.TabIndex = 6;
+            this.bunifuPanel1.Click += new System.EventHandler(this.bunifuPanel1_Click);
             // 
             // btnpassview
             // 
             this.btnpassview.AllowAnimations = true;
             this.btnpassview.AllowBorderColorChanges = true;
             this.btnpassview.AllowMouseEffects = true;
+            this.btnpassview.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.btnpassview.AnimationSpeed = 200;
             this.btnpassview.BackColor = System.Drawing.Color.Transparent;
             this.btnpassview.BackgroundColor = System.Drawing.Color.Transparent;
@@ -356,7 +362,7 @@
             this.btnpassview.ShowBorders = true;
             this.btnpassview.Size = new System.Drawing.Size(25, 25);
             this.btnpassview.Style = Bunifu.UI.WinForms.BunifuButton.BunifuIconButton.ButtonStyles.Round;
-            this.btnpassview.TabIndex = 0;
+            this.btnpassview.TabIndex = 4;
             this.btnpassview.Visible = false;
             this.btnpassview.Click += new System.EventHandler(this.btnpassview_Click);
             this.btnpassview.MouseDown += new System.Windows.Forms.MouseEventHandler(this.bunifuIconButton1_MouseDown);
@@ -393,26 +399,26 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Welcome to GestProm";
             // 
-            // label1
+            // signin
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.label1.Location = new System.Drawing.Point(528, 79);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(72, 22);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Sign in";
+            this.signin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.signin.AutoSize = true;
+            this.signin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signin.ForeColor = System.Drawing.SystemColors.AppWorkspace;
+            this.signin.Location = new System.Drawing.Point(528, 79);
+            this.signin.Name = "signin";
+            this.signin.Size = new System.Drawing.Size(72, 22);
+            this.signin.TabIndex = 0;
+            this.signin.Text = "Sign in";
             // 
-            // panel2
+            // panelb
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
-            this.panel2.BackColor = System.Drawing.Color.DodgerBlue;
-            this.panel2.Location = new System.Drawing.Point(546, 108);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(36, 3);
-            this.panel2.TabIndex = 5;
+            this.panelb.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)));
+            this.panelb.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panelb.Location = new System.Drawing.Point(546, 108);
+            this.panelb.Name = "panelb";
+            this.panelb.Size = new System.Drawing.Size(36, 3);
+            this.panelb.TabIndex = 5;
             // 
             // Login
             // 
@@ -421,8 +427,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.txtpass);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelb);
+            this.Controls.Add(this.signin);
             this.Controls.Add(this.btnlogin);
             this.Controls.Add(this.txtuser);
             this.Controls.Add(this.panel1);
@@ -446,8 +452,8 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton2 btnlogin;
         private System.Windows.Forms.Panel panel1;
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label signin;
+        private System.Windows.Forms.Panel panelb;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label2;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms.Helpers.Transitions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,6 +21,34 @@ namespace GestProm
 
             var ms1 = new System.Windows.Forms.ToolTip();
             ms1.SetToolTip(btnpassview, "Show Password");
+        }
+
+        bool activar = false;
+
+        void deslizarleft()
+        {
+            Transition t = new Transition(new TransitionType_EaseInEaseOut(500));
+            t.add(bunifuPanel1, "Left", -10);
+            t.add(signin, "Left", 358);
+            t.add(panelb, "Left", 376);
+            t.add(txtuser, "Left", 274);
+            t.add(txtpass, "Left", 274);
+            t.add(btnpassview, "Left", 201);
+            t.add(btnlogin, "Left", 295);
+            t.run();
+        }
+
+        void deslizarright()
+        {
+            Transition t = new Transition(new TransitionType_EaseInEaseOut(500));
+            t.add(bunifuPanel1, "Left", 311);
+            t.add(signin, "Left", 528);
+            t.add(panelb, "Left", 546);
+            t.add(txtuser, "Left", 444);
+            t.add(txtpass, "Left", 444);
+            t.add(btnpassview, "Left", 371);
+            t.add(btnlogin, "Left", 465);
+            t.run();
         }
 
         void bordesradius()
@@ -44,6 +73,8 @@ namespace GestProm
 
         private void txtpass_TextChanged(object sender, EventArgs e)
         {
+            deslizarleft();
+
             string inputText = txtpass.Text;
 
             bool containsLetterOrDigit = false;
@@ -82,6 +113,45 @@ namespace GestProm
         private void btnpassview_Click(object sender, EventArgs e)
         {
             txtpass.PasswordChar = '\0';
+        }
+
+        private void txtuser_Click(object sender, EventArgs e)
+        {
+            activar = true;
+            deslizarleft();
+        }
+
+        private void txtuser_Leave(object sender, EventArgs e)
+        {
+            if (activar == false)
+            {
+                deslizarright();
+            }
+        }
+
+        private void txtpass_Click(object sender, EventArgs e)
+        {
+            deslizarleft();
+            activar = true;
+        }
+
+        private void txtpass_Leave(object sender, EventArgs e)
+        {
+            if (activar == false)
+            {
+                deslizarright();
+            }
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+            deslizarright();
+            activar = false;
+        }
+
+        private void txtuser_TextChanged(object sender, EventArgs e)
+        {
+            deslizarleft();
         }
     }
 }
