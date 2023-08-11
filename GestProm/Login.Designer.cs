@@ -301,6 +301,7 @@
             this.btnlogin.TextMarginLeft = 0;
             this.btnlogin.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnlogin.UseDefaultRadiusAndThickness = true;
+            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
             // panel1
             // 
