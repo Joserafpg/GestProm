@@ -23,32 +23,51 @@ namespace GestProm
             ms1.SetToolTip(btnpassview, "Show Password");
         }
 
-        bool activar = false;
+        int time = 300;
+        private bool animacionEnCurso = false;
 
         void deslizarleft()
         {
-            Transition t = new Transition(new TransitionType_EaseInEaseOut(500));
-            t.add(bunifuPanel1, "Left", -10);
-            t.add(signin, "Left", 358);
-            t.add(panelb, "Left", 376);
-            t.add(txtuser, "Left", 274);
-            t.add(txtpass, "Left", 274);
-            t.add(btnpassview, "Left", 201);
-            t.add(btnlogin, "Left", 295);
-            t.run();
+            if (!animacionEnCurso)
+            {
+                animacionEnCurso = true;
+
+                Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
+                t.add(bunifuPanel1, "Left", -10);
+                t.add(signin, "Left", 358);
+                t.add(panelb, "Left", 376);
+                t.add(txtuser, "Left", 274);
+                t.add(txtpass, "Left", 274);
+                t.add(btnpassview, "Left", 530);
+                t.add(btnlogin, "Left", 295);
+                t.run();
+
+                t.TransitionCompletedEvent += (sender, e) => {
+                    animacionEnCurso = false;
+                };
+            }
         }
 
         void deslizarright()
         {
-            Transition t = new Transition(new TransitionType_EaseInEaseOut(500));
-            t.add(bunifuPanel1, "Left", 311);
-            t.add(signin, "Left", 528);
-            t.add(panelb, "Left", 546);
-            t.add(txtuser, "Left", 444);
-            t.add(txtpass, "Left", 444);
-            t.add(btnpassview, "Left", 371);
-            t.add(btnlogin, "Left", 465);
-            t.run();
+            if (!animacionEnCurso)
+            {
+                animacionEnCurso = true;
+
+                Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
+                t.add(bunifuPanel1, "Left", 311);
+                t.add(signin, "Left", 528);
+                t.add(panelb, "Left", 546);
+                t.add(txtuser, "Left", 444);
+                t.add(txtpass, "Left", 444);
+                t.add(btnpassview, "Left", 371);
+                t.add(btnlogin, "Left", 465);
+                t.run();
+
+                t.TransitionCompletedEvent += (sender, e) => {
+                    animacionEnCurso = false;
+                };
+            }
         }
 
         void bordesradius()
@@ -117,36 +136,17 @@ namespace GestProm
 
         private void txtuser_Click(object sender, EventArgs e)
         {
-            activar = true;
             deslizarleft();
-        }
-
-        private void txtuser_Leave(object sender, EventArgs e)
-        {
-            if (activar == false)
-            {
-                deslizarright();
-            }
         }
 
         private void txtpass_Click(object sender, EventArgs e)
         {
             deslizarleft();
-            activar = true;
-        }
-
-        private void txtpass_Leave(object sender, EventArgs e)
-        {
-            if (activar == false)
-            {
-                deslizarright();
-            }
         }
 
         private void bunifuPanel1_Click(object sender, EventArgs e)
         {
             deslizarright();
-            activar = false;
         }
 
         private void txtuser_TextChanged(object sender, EventArgs e)
