@@ -31,10 +31,10 @@ namespace GestProm
             {
                 panelbudget.Visible = true;
             }
-
+            
             else
             {
-                if (texto.Count() > 1) 
+                if (texto.Count() > 0) 
                 {
                     MessageBox.Show("The name is too short");              
                 }
@@ -48,7 +48,7 @@ namespace GestProm
 
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
-
+            paneldtg.Visible = true;
         }
     }
 }
