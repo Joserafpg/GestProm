@@ -198,6 +198,7 @@ namespace GestProm
         {
             tittlepage.Text = "Profile";
             descriptiontext.Text = "???";
+            AbrirFormEnPanel(new Profile());
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
