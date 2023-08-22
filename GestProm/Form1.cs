@@ -126,7 +126,7 @@ namespace GestProm
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void bunifuIconButton2_Click(object sender, EventArgs e)
+        public void bunifuIconButton2_Click(object sender, EventArgs e)
         {
             Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
             t.add(menu, "Left", -300);
