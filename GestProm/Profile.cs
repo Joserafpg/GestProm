@@ -40,10 +40,7 @@ namespace GestProm
         public void CerrarFormEnPanel()
         {
             Form formAbierto = this.main.Controls.OfType<Form>().FirstOrDefault();
-            if (formAbierto != null)
-            {
-                formAbierto.Close();
-            }
+            formAbierto?.Close();
 
             foreach (Control control in this.main.Controls)
             {
@@ -51,21 +48,6 @@ namespace GestProm
             }
 
             open = false;
-        }
-
-        private void Profile_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void bunifuButton1_Click(object sender, EventArgs e)
-        {
-            AbrirFormEnPanel(new Settings());
-        }
-
-        private void bunifuButton2_Click(object sender, EventArgs e)
-        {
-            CerrarFormEnPanel();
         }
     }
 }

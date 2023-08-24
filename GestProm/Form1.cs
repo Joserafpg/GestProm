@@ -116,6 +116,12 @@ namespace GestProm
             fh.Show();
         }
 
+        public void text(string tittle, string description)
+        {
+            tittlepage.Text = tittle;
+            descriptiontext.Text = description;
+        }
+
         private void bunifuIconButton1_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -176,35 +182,31 @@ namespace GestProm
 
         private void bunifuButton25_Click(object sender, EventArgs e)
         {
-            tittlepage.Text = "Settings";
-            descriptiontext.Text = "Easily customizable settings and preferences.";
+            text("Settings", "Easily customizable settings and preferences.");
             AbrirFormEnPanel(new Settings());
         }
 
         private void bunifuButton24_Click(object sender, EventArgs e)
         {
-            tittlepage.Text = "Analytics";
-            descriptiontext.Text = "Display analytics about your channel.";
+            text("Analytics", "Display analytics about your channel.");
         }
 
         private void bunifuButton23_Click(object sender, EventArgs e)
         {
-            tittlepage.Text = "Budget";
-            descriptiontext.Text = "???";
+            text("Budget", "???");
             AbrirFormEnPanel(new Budget());
         }
 
         private void bunifuButton22_Click(object sender, EventArgs e)
         {
-            tittlepage.Text = "Profile";
-            descriptiontext.Text = "???";
+            text("Profile", "???");
             AbrirFormEnPanel(new Profile());
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
-            tittlepage.Text = "Dashboard";
-            descriptiontext.Text = "???";
+            text("Dashboard", "???");
+            AbrirFormEnPanel(new Dashboard());
         }
     }
 }
