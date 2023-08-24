@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Bunifu.UI.WinForms;
+using Bunifu.UI.WinForms.BunifuAnimatorNS;
+using Bunifu.UI.WinForms.Helpers.Transitions;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,11 +11,15 @@ using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace GestProm
 {
     public partial class Profile : Form
     {
+
+        private int time = 300;
         public Profile()
         {
             InitializeComponent();
@@ -28,6 +35,10 @@ namespace GestProm
 
                 circle2.FillColor = Color.Silver;
                 circle2.BorderColor = Color.Silver;
+
+                Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
+                t.add(bunifuPanel6, "Top", 10);
+                t.run();
             }
 
             else
@@ -37,6 +48,10 @@ namespace GestProm
 
                 circle2.FillColor = Color.White;
                 circle2.BorderColor = Color.White;
+
+                Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
+                t.add(bunifuPanel6, "Top", -200);
+                t.run();
             }
         }
 
