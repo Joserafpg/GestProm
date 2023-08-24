@@ -37,7 +37,7 @@ namespace GestProm
                 circle2.BorderColor = Color.Silver;
 
                 Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
-                t.add(bunifuPanel6, "Top", 10);
+                t.add(bunifuPanel6, "Top", 5);
                 t.run();
             }
 
@@ -50,7 +50,7 @@ namespace GestProm
                 circle2.BorderColor = Color.White;
 
                 Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
-                t.add(bunifuPanel6, "Top", -200);
+                t.add(bunifuPanel6, "Top", -250);
                 t.run();
             }
         }
