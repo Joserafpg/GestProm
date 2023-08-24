@@ -16,6 +16,28 @@ namespace GestProm
         public Profile()
         {
             InitializeComponent();
+            this.bunifuPanel4.MouseWheel += bunifupanel4_MouseWheel;
+        }
+
+        private void bunifupanel4_MouseWheel(object sender, MouseEventArgs e)
+        {
+            if (e.Delta > 0)
+            {
+                circle1.FillColor = Color.White;
+                circle1.BorderColor = Color.White;
+
+                circle2.FillColor = Color.Silver;
+                circle2.BorderColor = Color.Silver;
+            }
+
+            else
+            {
+                circle1.FillColor = Color.Silver;
+                circle1.BorderColor = Color.Silver;
+
+                circle2.FillColor = Color.White;
+                circle2.BorderColor = Color.White;
+            }
         }
 
         public bool open = false;
