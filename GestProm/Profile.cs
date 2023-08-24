@@ -49,5 +49,11 @@ namespace GestProm
 
             open = false;
         }
+
+        private void bunifuButton1_Click(object sender, EventArgs e)
+        {
+            Form1 form = Application.OpenForms.OfType<Form1>().FirstOrDefault();
+            form?.bunifuButton22.PerformClick();
+        }
     }
 }

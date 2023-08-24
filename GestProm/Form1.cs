@@ -161,6 +161,7 @@ namespace GestProm
         private void Form1_Load(object sender, EventArgs e)
         {
             bordesradius();
+            bunifuButton21.PerformClick();
         }
 
         private void labelhora_MouseLeave(object sender, EventArgs e)
@@ -197,16 +198,16 @@ namespace GestProm
             AbrirFormEnPanel(new Budget());
         }
 
-        private void bunifuButton22_Click(object sender, EventArgs e)
+        public void bunifuButton22_Click(object sender, EventArgs e)
         {
             text("Profile", "???");
-            AbrirFormEnPanel(new Profile());
+            AbrirFormEnPanel(new Dashboard());
         }
 
         private void bunifuButton21_Click(object sender, EventArgs e)
         {
             text("Dashboard", "???");
-            AbrirFormEnPanel(new Dashboard());
+            AbrirFormEnPanel(new Profile());
         }
     }
 }
