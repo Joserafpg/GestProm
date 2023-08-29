@@ -17,7 +17,7 @@ namespace GestProm
     public partial class Form1 : Form
     {
         private Timer timer;
-        private int time = 300;
+        const int time = 300;
 
         public Form1()
         {

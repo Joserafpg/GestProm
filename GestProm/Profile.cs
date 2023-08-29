@@ -19,7 +19,7 @@ namespace GestProm
     public partial class Profile : Form
     {
 
-        private int time = 300;
+        const int time = 300;
         public Profile()
         {
             InitializeComponent();
@@ -41,6 +41,10 @@ namespace GestProm
                 Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
                 t.add(bunifuPanel6, "Top", 0);
                 t.run();
+                
+                Transition d = new Transition(new TransitionType_EaseInEaseOut(time));
+                d.add(bunifuGradientPanel3, "Top", 290);
+                d.run();
             }
 
             else
@@ -56,6 +60,10 @@ namespace GestProm
                 Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
                 t.add(bunifuPanel6, "Top", -290);
                 t.run();
+                
+                Transition y = new Transition(new TransitionType_EaseInEaseOut(time));
+                y.add(bunifuGradientPanel3, "Top", 0);
+                y.run();
             }
         }
 
