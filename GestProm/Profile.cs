@@ -35,9 +35,11 @@ namespace GestProm
 
                 circle2.FillColor = Color.Silver;
                 circle2.BorderColor = Color.Silver;
+                //bunifuPanel6.Width = 244;
+                //bunifuPanel6.Location = new Point(3, 0);
 
                 Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
-                t.add(bunifuPanel6, "Top", 5);
+                t.add(bunifuPanel6, "Top", 0);
                 t.run();
             }
 
@@ -48,9 +50,11 @@ namespace GestProm
 
                 circle2.FillColor = Color.White;
                 circle2.BorderColor = Color.White;
+                //bunifuPanel6.Width = 217;
+                //bunifuPanel6.Location = new Point(16, 0);
 
                 Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
-                t.add(bunifuPanel6, "Top", -250);
+                t.add(bunifuPanel6, "Top", -290);
                 t.run();
             }
         }
