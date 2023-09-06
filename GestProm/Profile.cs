@@ -26,6 +26,44 @@ namespace GestProm
             this.bunifuPanel4.MouseWheel += bunifupanel4_MouseWheel;
         }
 
+        async Task EsperarAsync()
+        {
+            await Task.Delay(time);
+        }
+
+        async void open()
+        {
+            Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
+            t.add(btnshort, "Left", 12);
+            t.run();
+            btngoto.Visible = false;
+
+            await EsperarAsync();
+
+            btnshort.Width = 205;
+            btnscroll1.Location = new Point(19, 3);
+            btnscroll2.Location = new Point(60, 3);
+            btnscroll3.Location = new Point(101, 3);
+
+            btnscroll1.Visible = true;
+            btnscroll2.Visible = true;
+            btnscroll3.Visible = true;
+        }
+        
+        void close()
+        {
+            btnshort.Width = 46;
+            Transition t = new Transition(new TransitionType_EaseInEaseOut(time));
+            t.add(btnshort, "Left", 167);
+            t.run();
+
+            btngoto.Visible = true;
+
+            btnscroll1.Visible = false;
+            btnscroll2.Visible = false;
+            btnscroll3.Visible = false;
+        }
+
         private void bunifupanel4_MouseWheel(object sender, MouseEventArgs e)
         {
             if (e.Delta > 0)
@@ -67,42 +105,23 @@ namespace GestProm
             }
         }
 
-        public bool open = false;
-        public void AbrirFormEnPanel(object Formhijo)
-        {
-            if (open == false)
-            {
-                foreach (Control control in this.main.Controls)
-                {
-                    control.Visible = false;
-                }
-                Form fh = Formhijo as Form;
-                fh.TopLevel = false;
-                fh.Dock = DockStyle.Fill;
-                this.main.Controls.Add(fh);
-                this.main.Tag = fh;
-                fh.Show();
-                open = true;
-            }
-        }
-
-        public void CerrarFormEnPanel()
-        {
-            Form formAbierto = this.main.Controls.OfType<Form>().FirstOrDefault();
-            formAbierto?.Close();
-
-            foreach (Control control in this.main.Controls)
-            {
-                control.Visible = true;
-            }
-
-            open = false;
-        }
-
         private void bunifuButton1_Click(object sender, EventArgs e)
         {
             Form1 form = Application.OpenForms.OfType<Form1>().FirstOrDefault();
             form?.bunifuButton22.PerformClick();
+        }
+                
+        private void btnshort_Click(object sender, EventArgs e)
+        {
+            if (btnshort.Location.X == 12)
+            {
+                close();
+            }
+
+            else
+            {
+                open();
+            }
         }
     }
 }
